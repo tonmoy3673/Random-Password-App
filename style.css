@@ -12,6 +12,7 @@
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .banner {
   padding: 35px 0;
@@ -31,4 +32,24 @@
   height: 4px;
   background-color: #019f55;
   border-radius: 3px;
+}
+.input-container {
+  width: 100%;
+  position: relative;
+}
+#input-field {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+#input-field::placeholder {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.copy-icon {
+  position: absolute;
+  top: 33%;
+  right: 7px;
+  cursor: pointer;
 }
