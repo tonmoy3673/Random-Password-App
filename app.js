@@ -1,4 +1,4 @@
-const passwordField= document.getElementById('Password')
+const passwordField= document.getElementById('input-field');
 const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowercase = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '0123456789';
@@ -16,6 +16,13 @@ const createPassword =()=>{
         password += setPass[Math.floor(Math.random() * setPass.length)]
         
     }
-    console.log(password);
+    passwordField.value= password;
+
 }
 
+// ============= copy password =========//
+const copyPassWord =()=>{
+    passwordField.select();
+    document.execCommand('copy')
+
+}
